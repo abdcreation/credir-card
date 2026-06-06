@@ -1,17 +1,19 @@
 [project]
 name = "ui-streamlit"
 version = "0.1.0"
-description = "Add your description here"
+description = "Credit Card Fraud Detection Dashboard with KAN v2 Detection Engine"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "streamlit",
     "pandas",
     "scikit-learn",
-    # add all your other dependencies here
 ]
 
-[tool.poetry]
-name = "ui-streamlit"
-version = "0.1.0"
-packages = [{include = "ui_streamlit"}]
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ui_streamlit*"]
