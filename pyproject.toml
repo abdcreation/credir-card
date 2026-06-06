@@ -10,9 +10,8 @@ dependencies = [
     "scikit-learn",
     # add all your other dependencies here
 ]
+
 [tool.poetry]
 name = "ui-streamlit"
 version = "0.1.0"
-packages = [{include = "ui_streamlit"}]  # if in project root
-# OR
-packages = [{include = "ui_streamlit", from = "src"}]  # if in src/
+packages = [{include = "ui_streamlit"}]
